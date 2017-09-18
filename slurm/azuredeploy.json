@@ -47,7 +47,7 @@
     "dnsName": "[concat('slurm-', uniqueString(resourceGroup().id))]",
     "imagePublisher": "Canonical",
     "imageOffer": "UbuntuServer",
-    "ubuntuOSVersion": "16.10",
+    "ubuntuOSVersion": "17.04",
     "publicIPAddressName": "publicip",
     "vmNameMaster": "master",
     "vmNameWorker": "worker",
