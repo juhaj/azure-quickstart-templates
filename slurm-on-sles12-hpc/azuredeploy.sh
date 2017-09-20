@@ -284,10 +284,21 @@ setup_env()
 	echo "export I_MPI_DYNAMIC_CONNECTION=0" >> /etc/profile.d/hpc.sh
 }
 
+set -x
+exec &> /root/install.log
+echo "Starting"
+date --iso-8601=seconds
 add_sdk_repo
+echo "DEBUG: add_sdk_repo done"
 install_pkgs
+echo "DEBUG: install_pkgs done"
 setup_shares
+echo "DEBUG: setup_shares done"
 setup_hpc_user
+echo "DEBUG: setup_hpc_user done"
 install_munge
+echo "DEBUG: install_munge done"
 install_slurm
+echo "DEBUG: install_slurm done"
 setup_env
+echo "DEBUG: all done"
