@@ -55,7 +55,7 @@ is_master()
 #
 add_sdk_repo()
 {
-    repoFile="/etc/zypp/repos.d/SMT-http_smt-azure_susecloud_net:SLE-SDK12-Pool.repo"
+    repoFile="/etc/zypp/repos.d/SMT-http_smt-azure_susecloud_net:SLE-SDK12-SP3-Pool.repo"
 	
     if [ -e "$repoFile" ]; then
         echo "SLES 12 SDK Repository already installed"
