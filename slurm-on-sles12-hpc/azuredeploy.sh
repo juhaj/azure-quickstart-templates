@@ -154,7 +154,7 @@ install_munge()
 
     useradd -M -c "Munge service account" -g munge -s /usr/sbin/nologin munge
 
-    wget https://github.com/dun/munge/archive/munge-0.5.11.tar.gz
+    wget https://github.com/dun/munge/archive/munge-${MUNGE_VERSION}.tar.gz
 
     tar xvfz munge-$MUNGE_VERSION.tar.gz
 
